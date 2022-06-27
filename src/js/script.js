@@ -1,5 +1,3 @@
-console.log("everyting just fine");
-console.log("HELLOOOOOO");
 
 function pictures(){
     const container = document.querySelector("section.photos");

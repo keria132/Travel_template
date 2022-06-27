@@ -109,14 +109,16 @@ function build(cb){
 		.pipe(gulp.dest('./build/css/'));
 
 	gulp.src('./src/js/script.js')
+        .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./build/js/'));
 
-	gulp.src('./src/img/*.png')
+	gulp.src('./src/img/*.*')
 		.pipe( gulp.dest('./build/img'));
 		
-	gulp.src('./index.html')
+	gulp.src('./src/index.html')
 			//.pipe( inject(gulp.src(['./build/js/*.js', './build/css/*.css'], {read: false})) )
 			.pipe( gulp.dest('./build/') );
 	
