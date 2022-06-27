@@ -10,15 +10,15 @@ function pictures(){
         //Try new Image(width, height)
         container.appendChild(newImg);
     }
-    let carousel = document.createElement("div");
-    let carouselText = document.createElement("p");
-    let node = document.createTextNode("01 / 05");
-    carouselText.appendChild(node);
-    carousel.appendChild(document.createElement("button"));
-    carousel.appendChild(carouselText);
-    carousel.appendChild(document.createElement("button"));
+    // let carousel = document.createElement("div");
+    // let carouselText = document.createElement("p");
+    // let node = document.createTextNode("01 / 05");
+    // carouselText.appendChild(node);
+    // carousel.appendChild(document.createElement("button"));
+    // carousel.appendChild(carouselText);
+    // carousel.appendChild(document.createElement("button"));
 
-    container.appendChild(carousel);
+    // container.appendChild(carousel);
 
 }
 

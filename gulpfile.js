@@ -51,8 +51,8 @@ function lessConvert(cd){
         'IE 10',
         'IE 11'],
     { cascade: false }))
-    .pipe(sourcemaps.write('.') )
     .pipe(rename({suffix: '.min'}) )
+    .pipe(sourcemaps.write('.') )
     .pipe(gulp.dest('./src/css/') )
     .pipe(browserSync.stream() );
 
@@ -69,8 +69,8 @@ function javascript(cd){
     // }))
     .pipe(uglify())
     //.pipe(concat("bundle.min.js"))
-    .pipe(sourcemaps.write('.'))
     .pipe(rename({suffix: '.min'}) )
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest("./src/js/min/"))
     .pipe(browserSync.stream())
 
